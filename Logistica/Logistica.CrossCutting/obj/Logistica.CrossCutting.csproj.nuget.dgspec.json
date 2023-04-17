@@ -1,0 +1,286 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.CrossCutting\\Logistica.CrossCutting.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Application\\Logistica.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Application\\Logistica.Application.csproj",
+        "projectName": "Logistica.Application",
+        "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Application\\Logistica.Application.csproj",
+        "packagesPath": "C:\\Users\\win11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\win11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj": {
+                "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.CrossCutting\\Logistica.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.CrossCutting\\Logistica.CrossCutting.csproj",
+        "projectName": "Logistica.CrossCutting",
+        "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.CrossCutting\\Logistica.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\win11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\win11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Application\\Logistica.Application.csproj": {
+                "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Application\\Logistica.Application.csproj"
+              },
+              "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj": {
+                "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj"
+              },
+              "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Infraestructure\\Logistica.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Infraestructure\\Logistica.Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj",
+        "projectName": "Logistica.Domain",
+        "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj",
+        "packagesPath": "C:\\Users\\win11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\win11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Infraestructure\\Logistica.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Infraestructure\\Logistica.Infraestructure.csproj",
+        "projectName": "Logistica.Infraestructure",
+        "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Infraestructure\\Logistica.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\win11\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\win11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj": {
+                "projectPath": "C:\\Users\\win11\\Documents\\GitHub\\Logistica_backend\\Logistica\\Logistica.Domain\\Logistica.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
