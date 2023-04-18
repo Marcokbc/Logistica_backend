@@ -1,0 +1,17 @@
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\bin\Debug\net6.0\Logistica.Infraestructure.deps.json
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\bin\Debug\net6.0\Logistica.Infraestructure.runtimeconfig.json
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\bin\Debug\net6.0\Logistica.Infraestructure.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\bin\Debug\net6.0\Logistica.Infraestructure.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\bin\Debug\net6.0\Logistica.Domain.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\bin\Debug\net6.0\Logistica.Domain.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.AssemblyInfo.cs
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.csproj.CopyComplete
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\refint\Logistica.Infraestructure.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\Logistica.Infraestructure.genruntimeconfig.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Infraestructure\obj\Debug\net6.0\ref\Logistica.Infraestructure.dll

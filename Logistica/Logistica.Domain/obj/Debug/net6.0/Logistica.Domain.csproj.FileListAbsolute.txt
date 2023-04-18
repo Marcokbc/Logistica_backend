@@ -1,0 +1,12 @@
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\bin\Debug\net6.0\Logistica.Domain.deps.json
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\bin\Debug\net6.0\Logistica.Domain.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\bin\Debug\net6.0\Logistica.Domain.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.csproj.AssemblyReference.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.AssemblyInfoInputs.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.AssemblyInfo.cs
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.csproj.CoreCompileInputs.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\refint\Logistica.Domain.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\Logistica.Domain.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Domain\obj\Debug\net6.0\ref\Logistica.Domain.dll

@@ -1,0 +1,15 @@
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Application.deps.json
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Application.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Application.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Domain.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Domain.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.csproj.AssemblyReference.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.AssemblyInfoInputs.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.AssemblyInfo.cs
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.csproj.CoreCompileInputs.cache
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.csproj.CopyComplete
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\refint\Logistica.Application.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.pdb
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.Application\obj\Debug\net6.0\ref\Logistica.Application.dll
