@@ -10,15 +10,16 @@ namespace Logistica.Application.DTOs
 {
     public class RotaDTO
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "O nome é obrigatório")]
         [MinLength(3)]
         [MaxLength(100)]
-        public string NomeCidade { get; private set; }
+        public string NomeCidade { get; set; }
 
         [Required(ErrorMessage = "Informe a data da rota")]
-        public DateTime DataRota { get; private set; }
-        public int IdPedido { get; private set; }
+        public DateTime DataRota { get; set; }
+        public int IdPedido { get;  set; }
     }
 }

@@ -10,24 +10,25 @@ namespace Logistica.Application.DTOs
 {
     public class PedidoDTO
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Informe o nome")]
         [MinLength(3)]
         [MaxLength(100)]
-        public string Nome { get; private set; }
+        public string Nome { get; set; }
 
         [Required(ErrorMessage = "Informe a origem")]
         [MinLength(3)]
         [MaxLength(100)]
-        public string Origem { get; private set; }
+        public string Origem { get; set; }
 
         [Required(ErrorMessage = "Informe o destino")]
         [MinLength(3)]
         [MaxLength(100)]
-        public string Destino { get; private set; }
+        public string Destino { get; set; }
 
         [Required(ErrorMessage = "Informe o status")]
-        public int Status { get; private set; }
+        public int Status { get; set; }
     }
 }

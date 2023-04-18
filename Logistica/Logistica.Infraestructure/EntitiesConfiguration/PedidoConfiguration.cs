@@ -15,6 +15,16 @@ namespace Logistica.Infraestructure.EntitiesConfiguration
         {
             builder.HasKey(t => t.Id);
             builder.Property(p => p.Nome).HasMaxLength(100).IsRequired();
+            builder.Property(p => p.Origem).HasMaxLength(100).IsRequired();
+            builder.Property(p => p.Destino).HasMaxLength(100).IsRequired();
+            builder.Property(p => p.Nome).HasMaxLength(100).IsRequired();
+            builder.Property(p => p.Status).IsRequired();
+
+            builder.HasData(
+              new Pedido(1, "Material Escolar", "Brumado", "VCA", 1),
+              new Pedido(2, "Eletrônicos", "Brumado", "VCA", 1),
+              new Pedido(3, "Acessórios", "Brumado", "VCA", 1)
+            );
         }
     }
 }

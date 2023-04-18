@@ -15,6 +15,11 @@ namespace Logistica.Infraestructure.EntitiesConfiguration
         {
             builder.HasKey(t => t.Id);
             builder.Property(p => p.NomeCidade).HasMaxLength(100).IsRequired();
-    }
+            builder.Property(p => p.DataRota).IsRequired();
+            builder.Property(p => p.NomeCidade).HasMaxLength(100).IsRequired();
+
+            builder.HasOne(e => e.Pedido).WithMany(e => e.Rotas)
+                .HasForeignKey(e => e.IdPedido);
+        }
     }
 }

@@ -9,13 +9,25 @@ namespace Logistica.Domain.Entities
 {
     public sealed class Pedido : Entity
     {
+        public Pedido(string nome, string origem, string destino, int status) 
+        {
+            ValidateDomain(nome, origem, destino, status);
+        }
+
+        public Pedido(int id, string nome, string origem, string destino, int status)
+        {
+            DomainExceptionValidation.When(id < 0, "valor de Id inválido.");
+            Id = id;
+            ValidateDomain(nome, origem, destino, status);
+        }
+
         public string Nome { get; private set; }
         public string Origem { get; private set; }
         public string Destino { get; private set; }
         public int Status { get; private set; }
         public ICollection<Rota>? Rotas { get; private set; }
 
-        private void ValidateDomain(string nome, string origem, string destino, int satus)
+        private void ValidateDomain(string nome, string origem, string destino, int status)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(nome),
                 "Nome inválido. O nome é obrigatório");
@@ -29,7 +41,7 @@ namespace Logistica.Domain.Entities
             Nome = nome;
             Origem = origem;
             Destino = destino;
-            Status = satus;
+            Status = status;
         }
     }
 }
