@@ -1,5 +1,6 @@
 ﻿using Logistica.Application.DTOs;
 using Logistica.Application.Interfaces;
+using Logistica.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +25,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpGet("{id}", Name = "GetRota")]
-        public async Task<ActionResult<RotaDTO>> Get(int id)
+        public async Task<ActionResult<Rota>> GetRota(int id)
         {
             var rota = await _rotaService.GetById(id);
 
@@ -45,7 +46,7 @@ namespace Logistica.API.Controllers
 
             _rotaService.Add(rota);
 
-            return new CreatedAtRouteResult("GetRota",
+            return CreatedAtRoute(nameof(GetRota),
                 new {id = rota.Id}, rota);
         }
 
@@ -66,7 +67,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<RotaDTO>> Delete(int id)
+        public async Task<ActionResult<Rota>> Delete(int id)
         {
             var rotaDto = await _rotaService.GetById(id);
             if(rotaDto == null)
