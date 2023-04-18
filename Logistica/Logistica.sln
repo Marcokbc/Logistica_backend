@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Domain", "Logistica.Domain\Logistica.Domain.csproj", "{9FE54035-AAD7-45E0-B2DE-B34D0CAA977D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Application", "Logistica.Application\Logistica.Application.csproj", "{FBC05CE0-3945-4D4D-9E5A-31B8AAEC1557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Infraestructure", "Logistica.Infraestructure\Logistica.Infraestructure.csproj", "{C7E8CE76-7592-49C0-8297-9450A91775EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.CrossCutting", "Logistica.CrossCutting\Logistica.CrossCutting.csproj", "{56DE7F7B-6EDB-4F2B-A3FC-2CC236924F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.API", "Logistica.API\Logistica.API.csproj", "{A7728B9E-A048-4973-B5F7-71F4FD7E8BFB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FE54035-AAD7-45E0-B2DE-B34D0CAA977D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE54035-AAD7-45E0-B2DE-B34D0CAA977D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE54035-AAD7-45E0-B2DE-B34D0CAA977D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE54035-AAD7-45E0-B2DE-B34D0CAA977D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC05CE0-3945-4D4D-9E5A-31B8AAEC1557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC05CE0-3945-4D4D-9E5A-31B8AAEC1557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC05CE0-3945-4D4D-9E5A-31B8AAEC1557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC05CE0-3945-4D4D-9E5A-31B8AAEC1557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E8CE76-7592-49C0-8297-9450A91775EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E8CE76-7592-49C0-8297-9450A91775EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E8CE76-7592-49C0-8297-9450A91775EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E8CE76-7592-49C0-8297-9450A91775EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DE7F7B-6EDB-4F2B-A3FC-2CC236924F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DE7F7B-6EDB-4F2B-A3FC-2CC236924F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DE7F7B-6EDB-4F2B-A3FC-2CC236924F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DE7F7B-6EDB-4F2B-A3FC-2CC236924F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7728B9E-A048-4973-B5F7-71F4FD7E8BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7728B9E-A048-4973-B5F7-71F4FD7E8BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7728B9E-A048-4973-B5F7-71F4FD7E8BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7728B9E-A048-4973-B5F7-71F4FD7E8BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

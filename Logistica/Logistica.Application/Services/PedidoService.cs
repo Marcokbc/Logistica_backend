@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Logistica.Application.DTOs;
+using Logistica.Application.Interfaces;
 using Logistica.Domain.Entities;
 using Logistica.Domain.Interfaces;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Logistica.Application.Services
 {
-    public class PedidoService
+    public class PedidoService : IPedidoService
     {
         private IPedidoRepository _pedidoRepository;
         private readonly IMapper _mapper;

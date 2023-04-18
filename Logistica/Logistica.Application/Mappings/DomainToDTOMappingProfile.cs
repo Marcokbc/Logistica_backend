@@ -9,7 +9,7 @@ using Logistica.Domain.Entities;
 
 namespace Logistica.Application.Mappings
 {
-    internal class DomainToDTOMappingProfile : Profile
+    public class DomainToDTOMappingProfile : Profile
     {
         public DomainToDTOMappingProfile()
         {

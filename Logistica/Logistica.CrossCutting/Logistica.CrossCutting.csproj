@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Logistica.Application\Logistica.Application.csproj" />
+    <ProjectReference Include="..\Logistica.Domain\Logistica.Domain.csproj" />
+    <ProjectReference Include="..\Logistica.Infraestructure\Logistica.Infraestructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
 </Project>

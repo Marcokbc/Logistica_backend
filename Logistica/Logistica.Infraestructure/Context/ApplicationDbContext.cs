@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Logistica.Infraestructure.Context
 {
-    internal class ApplicationDbContext : ApplicationDbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

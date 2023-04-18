@@ -9,7 +9,7 @@ namespace Logistica.Application.Interfaces
 {
     public interface IRotaService
     {
-        Task<IEnumerable<RotaDTO>> GetProdutos();
+        Task<IEnumerable<RotaDTO>> GetRotas();
         Task<RotaDTO> GetById(int? id);
         Task Add(RotaDTO rotaDto);
         Task Update(RotaDTO rotaDto);
