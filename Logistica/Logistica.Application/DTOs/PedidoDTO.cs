@@ -10,6 +10,8 @@ namespace Logistica.Application.DTOs
 {
     public class PedidoDTO
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Informe o nome")]
         [MinLength(3)]
         [MaxLength(100)]
