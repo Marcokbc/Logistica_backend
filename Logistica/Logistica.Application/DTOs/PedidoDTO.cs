@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Logistica.Application.DTOs
@@ -30,6 +31,7 @@ namespace Logistica.Application.DTOs
         [Required(ErrorMessage = "Informe o status")]
         public int Status { get; set; }
 
+        [JsonIgnore]
         public ICollection<Rota>? Rotas { get; set; }
     }
 }

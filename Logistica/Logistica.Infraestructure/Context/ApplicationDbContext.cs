@@ -1,14 +1,18 @@
 ﻿using Logistica.Domain.Entities;
+using Logistica.Infraestructure.Identity.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Logistica.Infraestructure.Context
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -21,7 +25,13 @@ namespace Logistica.Infraestructure.Context
         {
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext)
-                .Assembly);
+            .Assembly);
+
+            builder.Entity<Pedido>()
+            .Property(e => e.Status)
+            .HasConversion(
+                v => v.ToString(),
+                v => (Status)Enum.Parse(typeof(Status), v));
         }
     }
 }

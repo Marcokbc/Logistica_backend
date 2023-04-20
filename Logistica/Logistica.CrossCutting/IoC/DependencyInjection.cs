@@ -13,6 +13,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Logistica.Domain.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Logistica.CrossCutting.IoC
 {
@@ -25,6 +28,27 @@ namespace Logistica.CrossCutting.IoC
              options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"
             ), b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
+            services.AddIdentity<IdentityUser, IdentityRole>()
+              .AddEntityFrameworkStores<ApplicationDbContext>()
+              .AddDefaultTokenProviders();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                       .AddJwtBearer(options =>
+                       {
+                           options.TokenValidationParameters = new TokenValidationParameters
+                           {
+                               ValidateIssuer = true,
+                               ValidateAudience = true,
+                               ValidateLifetime = true,
+                               ValidateIssuerSigningKey = true,
+                               ValidIssuer = configuration["Jwt:Issuer"],
+                               ValidAudience = configuration["Jwt:Audience"],
+                               IssuerSigningKey = new SymmetricSecurityKey(
+                                   Encoding.UTF8.GetBytes(configuration["Jwt:Key"]))
+                           };
+                       });
+
+            services.AddScoped<IAuthenticate, AuthenticateService>();
             //services.AddDbContext<ApplicationDbContext>(options =>
             //   options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
             //         new MySqlServerVersion(new Version(8, 0, 11))));

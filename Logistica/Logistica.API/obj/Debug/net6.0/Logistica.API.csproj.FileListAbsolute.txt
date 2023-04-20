@@ -74,3 +74,9 @@ C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\obj\De
 C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\obj\Debug\net6.0\Logistica.API.pdb
 C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\obj\Debug\net6.0\Logistica.API.genruntimeconfig.cache
 C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\obj\Debug\net6.0\ref\Logistica.API.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\win11\Documents\GitHub\Logistica_backend\Logistica\Logistica.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

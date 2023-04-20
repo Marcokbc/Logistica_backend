@@ -21,9 +21,9 @@ namespace Logistica.Infraestructure.EntitiesConfiguration
             builder.Property(p => p.Status).IsRequired();
 
             builder.HasData(
-              new Pedido(1, "Material Escolar", "Brumado", "VCA", 1),
-              new Pedido(2, "Eletrônicos", "Brumado", "VCA", 1),
-              new Pedido(3, "Acessórios", "Brumado", "VCA", 1)
+              new Pedido(1, "Material Escolar", "Brumado", "VCA", Status.PedidoEfetuado),
+              new Pedido(2, "Eletrônicos", "Brumado", "VCA", Status.Transito),
+              new Pedido(3, "Acessórios", "Brumado", "VCA", Status.Transito)
             );
         }
     }

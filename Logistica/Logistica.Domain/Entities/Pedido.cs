@@ -4,17 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Logistica.Domain.Entities
 {
     public sealed class Pedido : Entity
     {
-        public Pedido(string nome, string origem, string destino, int status) 
+        public Pedido(string nome, string origem, string destino, Status status) 
         {
             ValidateDomain(nome, origem, destino, status);
         }
 
-        public Pedido(int id, string nome, string origem, string destino, int status)
+        public Pedido(int id, string nome, string origem, string destino, Status status)
         {
             DomainExceptionValidation.When(id < 0, "valor de Id inválido.");
             Id = id;
@@ -24,10 +25,10 @@ namespace Logistica.Domain.Entities
         public string Nome { get; private set; }
         public string Origem { get; private set; }
         public string Destino { get; private set; }
-        public int Status { get; private set; }
+        public Status Status { get; private set; }
         public ICollection<Rota>? Rotas { get; private set; }
 
-        private void ValidateDomain(string nome, string origem, string destino, int status)
+        private void ValidateDomain(string nome, string origem, string destino, Status status)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(nome),
                 "Nome inválido. O nome é obrigatório");
