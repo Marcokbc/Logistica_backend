@@ -1,4 +1,6 @@
 ﻿using Logistica.Application.DTOs;
+using Logistica.Application.Pagination;
+using Logistica.Domain.Pagination;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +11,10 @@ namespace Logistica.Application.Interfaces
 {
     public interface IPedidoService
     {
-        Task<IEnumerable<PedidoDTO>> GetPedidos();
+        Task<PaginatedResult<PedidoDTO>> GetPedidos(int pageNumber, int pageSize);
         Task<PedidoDTO> GetById(int? id);
+
+        Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo);
         Task Add(PedidoDTO pedidoDto);
         Task Update(PedidoDTO pedidoDto);
         Task Remove(int? id);

@@ -30,6 +30,10 @@ namespace Logistica.Infraestructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("CodigoRastreio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Destino")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -57,14 +61,16 @@ namespace Logistica.Infraestructure.Migrations
                         new
                         {
                             Id = 1,
+                            CodigoRastreio = "e317d6e6-8a7b-4fba-b29a-7faf7f3e999e",
                             Destino = "VCA",
                             Nome = "Material Escolar",
                             Origem = "Brumado",
-                            Status = "Pedido Efetuado"
+                            Status = "PedidoEfetuado"
                         },
                         new
                         {
                             Id = 2,
+                            CodigoRastreio = "aec597d8-2380-4057-abac-92bdbc23821e",
                             Destino = "VCA",
                             Nome = "Eletrônicos",
                             Origem = "Brumado",
@@ -73,6 +79,34 @@ namespace Logistica.Infraestructure.Migrations
                         new
                         {
                             Id = 3,
+                            CodigoRastreio = "9925a76c-ab66-4278-8fa9-f2580e0ad2e5",
+                            Destino = "VCA",
+                            Nome = "Acessórios",
+                            Origem = "Brumado",
+                            Status = "Transito"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CodigoRastreio = "145ed377-4cac-41e1-b704-93aacbe72471",
+                            Destino = "VCA",
+                            Nome = "Material Escolar",
+                            Origem = "Brumado",
+                            Status = "PedidoEfetuado"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CodigoRastreio = "93059628-0894-4380-9fd1-6485748dea82",
+                            Destino = "VCA",
+                            Nome = "Eletrônicos",
+                            Origem = "Brumado",
+                            Status = "Transito"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CodigoRastreio = "f3da150e-661a-4200-aa82-37776e9bcfa0",
                             Destino = "VCA",
                             Nome = "Acessórios",
                             Origem = "Brumado",

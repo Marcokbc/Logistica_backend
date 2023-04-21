@@ -31,6 +31,11 @@ namespace Logistica.Infraestructure.Repositories
                .SingleOrDefaultAsync(p => p.Id == id);
         }
 
+        public async Task<IEnumerable<Pedido>> GetByCodigoAsync(string? codigo)
+        {
+            return await _pedidoContext.Pedido.Where(n => n.CodigoRastreio.Contains(codigo)).ToListAsync();
+        }
+
         public async Task<IEnumerable<Pedido>> GetPedidosAsync()
         {
             return await _pedidoContext.Pedido.ToListAsync();

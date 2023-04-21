@@ -31,7 +31,7 @@ namespace Logistica.Infraestructure.Context
             .Property(e => e.Status)
             .HasConversion(
                 v => v.ToString(),
-                v => (Status)Enum.Parse(typeof(Status), v));
+                v => (StatusPedido)Enum.Parse(typeof(StatusPedido), v));
         }
     }
 }

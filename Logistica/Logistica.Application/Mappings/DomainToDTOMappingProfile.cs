@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Logistica.Application.DTOs;
 using Logistica.Domain.Entities;
+using Logistica.Domain.Pagination;
 
 namespace Logistica.Application.Mappings
 {
@@ -15,6 +16,9 @@ namespace Logistica.Application.Mappings
         {
             CreateMap<Rota, RotaDTO>().ReverseMap();
             CreateMap<Pedido, PedidoDTO>().ReverseMap();
+
+            CreateMap(typeof(PaginatedResult<>), typeof(PaginatedResult<>));
+
         }
     }
 }

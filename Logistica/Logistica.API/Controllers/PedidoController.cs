@@ -1,8 +1,11 @@
 ﻿using Logistica.Application.DTOs;
 using Logistica.Application.Interfaces;
+using Logistica.Application.Pagination;
 using Logistica.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Logistica.API.Controllers
 {
@@ -18,9 +21,11 @@ namespace Logistica.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PedidoDTO>>> Get()
+        public async Task<ActionResult<IEnumerable<PedidoDTO>>> 
+            Get([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
-            var pedidos = await _pedidoService.GetPedidos();
+            var pedidos = await _pedidoService.GetPedidos(pageNumber, pageSize);
+
             return Ok(pedidos);
         }
 
@@ -28,6 +33,18 @@ namespace Logistica.API.Controllers
         public async Task<ActionResult<Pedido>> GetPedido(int id)
         {
             var pedido = await _pedidoService.GetById(id);
+
+            if (pedido == null)
+            {
+                return NotFound();
+            }
+            return Ok(pedido);
+        }
+
+        [HttpGet("codigo/{codigo}", Name = "GetPedidoByCodigo")]
+        public async Task<ActionResult<Pedido>> GetPedidoByCodigo(string codigo)
+        {
+            var pedido = await _pedidoService.GetByCodigo(codigo);
 
             if (pedido == null)
             {

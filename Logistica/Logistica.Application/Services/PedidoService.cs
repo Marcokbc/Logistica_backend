@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Logistica.Application.DTOs;
 using Logistica.Application.Interfaces;
+using Logistica.Application.Pagination;
 using Logistica.Domain.Entities;
 using Logistica.Domain.Interfaces;
+using Logistica.Domain.Pagination;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +24,23 @@ namespace Logistica.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<PedidoDTO>> GetPedidos()
+        public async Task<PaginatedResult<PedidoDTO>> GetPedidos(int pageNumber, int pageSize)
         {
             var pedidosEntity = await _pedidoRepository.GetPedidosAsync();
-            return _mapper.Map<IEnumerable<PedidoDTO>>(pedidosEntity);
+            var totalItems = pedidosEntity.Count();
+            var items = pedidosEntity.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+            var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+
+            var pedidos = new PaginatedResult<Pedido>
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalItems = totalItems,
+                TotalPages = totalPages,
+                Items = items
+            };
+
+            return _mapper.Map<PaginatedResult<PedidoDTO>>(pedidos);
         }
 
         public async Task<PedidoDTO> GetById(int? id)
@@ -51,5 +66,16 @@ namespace Logistica.Application.Services
             var pedidoEntity = _pedidoRepository.GetByIdAsync(id).Result;
             await _pedidoRepository.RemoveAsync(pedidoEntity);
         }
+
+        public async Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo)
+        {
+                var pedidoEntity = await _pedidoRepository.GetByCodigoAsync(codigo);
+                return _mapper.Map<IEnumerable<PedidoDTO>>(pedidoEntity);
+            
+            
+        }
+
+        
+        
     }
 }

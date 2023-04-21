@@ -16,7 +16,7 @@ namespace Logistica.Domain.Entities
         public static readonly Status Despachado = new Status("Despachado");
         public static readonly Status Retirado = new Status("Retirado");
 
-        private Status(string value)
+        public Status(string value)
         {
             _value = value;
         }
