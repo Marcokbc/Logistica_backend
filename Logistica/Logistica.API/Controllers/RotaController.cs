@@ -1,6 +1,8 @@
 ﻿using Logistica.Application.DTOs;
 using Logistica.Application.Interfaces;
 using Logistica.Domain.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +10,7 @@ namespace Logistica.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class RotaController : ControllerBase
     {
         private readonly IRotaService _rotaService;

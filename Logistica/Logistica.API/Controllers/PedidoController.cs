@@ -2,6 +2,8 @@
 using Logistica.Application.Interfaces;
 using Logistica.Application.Pagination;
 using Logistica.Domain.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -11,6 +13,7 @@ namespace Logistica.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PedidoController : ControllerBase
     {
         private readonly IPedidoService _pedidoService;
