@@ -31,7 +31,6 @@ namespace Logistica.Application.DTOs
         [Required(ErrorMessage = "Informe o status")]
         public StatusPedido Status { get; set; }
 
-        [JsonIgnore]
         public ICollection<RotaDTO>? Rotas { get; set; }
     }
 }

@@ -70,12 +70,7 @@ namespace Logistica.Application.Services
         public async Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo)
         {
                 var pedidoEntity = await _pedidoRepository.GetByCodigoAsync(codigo);
-                return _mapper.Map<IEnumerable<PedidoDTO>>(pedidoEntity);
-            
-            
+                return _mapper.Map<IEnumerable<PedidoDTO>>(pedidoEntity); 
         }
-
-        
-        
     }
 }

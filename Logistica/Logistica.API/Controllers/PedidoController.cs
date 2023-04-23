@@ -44,6 +44,7 @@ namespace Logistica.API.Controllers
             return Ok(pedido);
         }
 
+
         [HttpGet("codigo/{codigo}", Name = "GetPedidoByCodigo")]
         public async Task<ActionResult<Pedido>> GetPedidoByCodigo(string codigo)
         {
