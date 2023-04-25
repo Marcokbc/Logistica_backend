@@ -27,24 +27,15 @@ namespace Logistica.Infraestructure.Repositories
 
         public async Task<Pedido> GetByIdAsync(int? id)
         {
-            //foreach(var pedido in _pedidoContext.Pedido)
-            //{
-            //    if (pedido.Id == id)
-            //    {
-            //        foreach(var rota in pedido.Rotas)
-            //        {
-
-            //                    }
-            //    }
-            //}
-
             return await _pedidoContext.Pedido.Include(c => c.Rotas.Where(r => r.IdPedido == id))
                  .SingleOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task<IEnumerable<Pedido>> GetByCodigoAsync(string? codigo)
+        public async Task<Pedido> GetByCodigoAsync(string? codigo)
         {
-            return await _pedidoContext.Pedido.Where(n => n.CodigoRastreio.Contains(codigo)).ToListAsync();
+            var pedido = await _pedidoContext.Pedido.Where(n => n.CodigoRastreio.Contains(codigo)).SingleOrDefaultAsync();
+
+            return await GetByIdAsync(pedido.Id);
         }
 
         public async Task<IEnumerable<Pedido>> GetPedidosAsync()

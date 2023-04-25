@@ -12,7 +12,7 @@ namespace Logistica.Domain.Interfaces
     {
         Task<IEnumerable<Pedido>> GetPedidosAsync();
         Task<Pedido> GetByIdAsync(int? id);
-        Task<IEnumerable<Pedido>> GetByCodigoAsync(string? codigo);
+        Task<Pedido> GetByCodigoAsync(string? codigo);
         Task<Pedido> CreateAsync(Pedido product);
         Task<Pedido> UpdateAsync(Pedido product);
         Task<Pedido> RemoveAsync(Pedido product);

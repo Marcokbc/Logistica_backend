@@ -23,7 +23,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PedidoDTO>>> 
+        public async Task<ActionResult<IEnumerable<PedidoWithoutRotasDTO>>>
             Get([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
             var pedidos = await _pedidoService.GetPedidos(pageNumber, pageSize);
@@ -57,7 +57,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] PedidoDTO pedido)
+        public async Task<ActionResult> Post([FromBody] PedidoWithoutRotasDTO pedido)
         {
             if (!ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] PedidoDTO pedido)
+        public async Task<ActionResult> Put(int id, [FromBody] PedidoWithoutRotasDTO pedido)
         {
             if (!ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Pedido>> Delete(int id)
+        public async Task<ActionResult<PedidoWithoutRotasDTO>> Delete(int id)
         {
             var pedidoDto = await _pedidoService.GetById(id);
             if (pedidoDto == null)

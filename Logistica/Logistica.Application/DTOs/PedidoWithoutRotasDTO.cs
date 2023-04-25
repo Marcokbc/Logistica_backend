@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Logistica.Application.DTOs
 {
-    public class PedidoDTO
+    public class PedidoWithoutRotasDTO
     {
         [Key]
         public int Id { get; set; }
@@ -31,8 +31,5 @@ namespace Logistica.Application.DTOs
 
         [Required(ErrorMessage = "Informe o status")]
         public StatusPedido Status { get; set; }
-
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public ICollection<RotaDTO>? Rotas { get; set; }
     }
 }

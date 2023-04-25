@@ -23,7 +23,7 @@ namespace Logistica.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<PaginatedResult<PedidoDTO>> GetPedidos(int pageNumber, int pageSize)
+        public async Task<PaginatedResult<PedidoWithoutRotasDTO>> GetPedidos(int pageNumber, int pageSize)
         {
             var pedidosEntity = await _pedidoRepository.GetPedidosAsync();
             var totalItems = pedidosEntity.Count();
@@ -39,7 +39,7 @@ namespace Logistica.Application.Services
                 Items = items
             };
 
-            return _mapper.Map<PaginatedResult<PedidoDTO>>(pedidos);
+            return _mapper.Map<PaginatedResult<PedidoWithoutRotasDTO>>(pedidos);
         }
 
         public async Task<PedidoDTO> GetById(int? id)
@@ -48,13 +48,13 @@ namespace Logistica.Application.Services
             return _mapper.Map<PedidoDTO>(pedidoEntity);
         }
 
-        public async Task Add(PedidoDTO pedidoDto)
+        public async Task Add(PedidoWithoutRotasDTO pedidoDto)
         {
             var pedidoEntity = _mapper.Map<Pedido>(pedidoDto);
             await _pedidoRepository.CreateAsync(pedidoEntity);
         }
 
-        public async Task Update(PedidoDTO pedidoDto)
+        public async Task Update(PedidoWithoutRotasDTO pedidoDto)
         {
             var pedidoEntity = _mapper.Map<Pedido>(pedidoDto);
             await _pedidoRepository.UpdateAsync(pedidoEntity);
@@ -66,10 +66,10 @@ namespace Logistica.Application.Services
             await _pedidoRepository.RemoveAsync(pedidoEntity);
         }
 
-        public async Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo)
+        public async Task<PedidoDTO> GetByCodigo(string? codigo)
         {
                 var pedidoEntity = await _pedidoRepository.GetByCodigoAsync(codigo);
-                return _mapper.Map<IEnumerable<PedidoDTO>>(pedidoEntity); 
+                return _mapper.Map<PedidoDTO>(pedidoEntity); 
         }
     }
 }

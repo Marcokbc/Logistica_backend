@@ -16,6 +16,7 @@ namespace Logistica.Application.Mappings
         {
             CreateMap<Rota, RotaDTO>().ReverseMap();
             CreateMap<Pedido, PedidoDTO>().ReverseMap();
+            CreateMap<Pedido, PedidoWithoutRotasDTO>().ReverseMap();
 
             CreateMap(typeof(PaginatedResult<>), typeof(PaginatedResult<>));
 
