@@ -10,11 +10,11 @@ namespace Logistica.Application.Interfaces
 {
     public interface IPedidoService
     {
-        Task<PaginatedResult<PedidoWithoutRotasDTO>> GetPedidos(int pageNumber, int pageSize);
+        Task<PaginatedResult<PedidoDTO>> GetPedidos(int pageNumber, int pageSize);
         Task<PedidoDTO> GetById(int? id);
-        Task<PedidoDTO> GetByCodigo(string? codigo);
-        Task Add(PedidoWithoutRotasDTO pedidoDto);
-        Task Update(PedidoWithoutRotasDTO pedidoDto);
+        Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo);
+        Task Add(PedidoDTO pedidoDto);
+        Task Update(PedidoDTO pedidoDto);
         Task Remove(int? id);
     }
 }

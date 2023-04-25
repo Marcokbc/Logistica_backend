@@ -32,7 +32,9 @@ namespace Logistica.Application.DTOs
         [Required(ErrorMessage = "Informe o status")]
         public StatusPedido Status { get; set; }
 
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string CodigoRastreio { get; set; }
+
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public ICollection<RotaDTO>? Rotas { get; set; }
     }
 }
