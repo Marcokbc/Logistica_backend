@@ -1,5 +1,4 @@
 ﻿using Logistica.Application.DTOs;
-using Logistica.Application.Pagination;
 using Logistica.Domain.Pagination;
 using System;
 using System.Collections.Generic;

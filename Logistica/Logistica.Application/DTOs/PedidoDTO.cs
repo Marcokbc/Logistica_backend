@@ -11,6 +11,7 @@ namespace Logistica.Application.DTOs
 {
     public class PedidoDTO
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Informe o nome")]
@@ -31,6 +32,7 @@ namespace Logistica.Application.DTOs
         [Required(ErrorMessage = "Informe o status")]
         public StatusPedido Status { get; set; }
 
+        [JsonIgnore]
         public ICollection<RotaDTO>? Rotas { get; set; }
     }
 }

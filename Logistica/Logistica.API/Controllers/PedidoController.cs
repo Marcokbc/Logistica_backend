@@ -1,6 +1,5 @@
 ﻿using Logistica.Application.DTOs;
 using Logistica.Application.Interfaces;
-using Logistica.Application.Pagination;
 using Logistica.Domain.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;

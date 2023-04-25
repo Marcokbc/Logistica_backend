@@ -32,6 +32,20 @@ namespace Logistica.Infraestructure.Context
             .HasConversion(
                 v => v.ToString(),
                 v => (StatusPedido)Enum.Parse(typeof(StatusPedido), v));
+
+            builder.Entity<Pedido>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            builder.Entity<Pedido>()
+            .HasKey(p => p.Id);
+
+            builder.Entity<Rota>()
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            builder.Entity<Rota>()
+            .HasKey(p => p.Id);
         }
     }
 }

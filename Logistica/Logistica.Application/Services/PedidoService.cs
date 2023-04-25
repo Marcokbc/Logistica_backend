@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Logistica.Application.DTOs;
 using Logistica.Application.Interfaces;
-using Logistica.Application.Pagination;
 using Logistica.Domain.Entities;
 using Logistica.Domain.Interfaces;
 using Logistica.Domain.Pagination;
