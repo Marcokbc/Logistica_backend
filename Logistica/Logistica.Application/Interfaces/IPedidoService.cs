@@ -13,7 +13,7 @@ namespace Logistica.Application.Interfaces
         Task<PaginatedResult<PedidoDTO>> GetPedidos(int pageNumber, int pageSize);
         Task<PedidoDTO> GetById(int? id);
         Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo);
-        Task Add(PedidoDTO pedidoDto);
+        Task<bool> Add(PedidoDTO pedidoDto);
         Task Update(PedidoDTO pedidoDto);
         Task Remove(int? id);
     }

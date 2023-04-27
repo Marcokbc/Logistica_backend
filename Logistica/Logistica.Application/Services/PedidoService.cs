@@ -6,6 +6,7 @@ using Logistica.Domain.Interfaces;
 using Logistica.Domain.Pagination;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,10 +49,14 @@ namespace Logistica.Application.Services
             return _mapper.Map<PedidoDTO>(pedidoEntity);
         }
 
-        public async Task Add(PedidoDTO pedidoDto)
+        public async Task<bool> Add(PedidoDTO pedidoDto)
         {
+            Validator.ValidateObject(pedidoDto, new ValidationContext(pedidoDto), true);
+
             var pedidoEntity = _mapper.Map<Pedido>(pedidoDto);
-            await _pedidoRepository.CreateAsync(pedidoEntity);
+            var pedido = await _pedidoRepository.CreateAsync(pedidoEntity);
+            return true;
+            
         }
 
         public async Task Update(PedidoDTO pedidoDto)
