@@ -59,16 +59,18 @@ namespace Logistica.Application.Services
             
         }
 
-        public async Task Update(PedidoDTO pedidoDto)
+        public async Task<bool> Update(PedidoDTO pedidoDto)
         {
             var pedidoEntity = _mapper.Map<Pedido>(pedidoDto);
             await _pedidoRepository.UpdateAsync(pedidoEntity);
+            return true;
         }
 
-        public async Task Remove(int? id)
+        public async Task<bool> Remove(int? id)
         {
             var pedidoEntity = _pedidoRepository.GetByIdAsync(id).Result;
             await _pedidoRepository.RemoveAsync(pedidoEntity);
+            return true;
         }
 
         public async Task<IEnumerable<PedidoDTO>> GetByCodigo(string? codigo)
