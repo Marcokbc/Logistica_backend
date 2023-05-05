@@ -20,9 +20,9 @@ namespace Logistica.Application.Services
             _userManager = userManager;
         }
 
-        public async Task<bool> Authenticate(string email, string password)
+        public async Task<bool> Authenticate(string username, string password)
         {
-            var result = await _signInManager.PasswordSignInAsync(email, password,
+            var result = await _signInManager.PasswordSignInAsync(username, password,
                isPersistent: false, lockoutOnFailure: false);
 
             return result.Succeeded;
@@ -33,11 +33,11 @@ namespace Logistica.Application.Services
             await _signInManager.SignOutAsync();
         }
 
-        public async Task<bool> RegisterUser(string firstName, string lastName, string email, string password)
+        public async Task<bool> RegisterUser(string username, string email, string password)
         {
             var appUser = new IdentityUser
             {
-                UserName = firstName,
+                UserName = username,
                 Email = email,
                 EmailConfirmed = true
             };

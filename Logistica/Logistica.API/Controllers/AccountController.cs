@@ -40,11 +40,11 @@ namespace Logistica.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            var result = await _authentication.RegisterUser(model.FirstName,model.LastName,model.Email, model.Password);
+            var result = await _authentication.RegisterUser(model.UserName,model.Email, model.Password);
             
             if (result)
             {
-                return Ok($"Usuário {model.FirstName} criado com sucesso");
+                return Ok($"Usuário {model.UserName} criado com sucesso");
             }
             else
             {

@@ -13,9 +13,7 @@ namespace Logistica.Infraestructure.Identity.Models
     public class RegisterUserModel 
     {
         [Required]
-        public string FirstName { get; set; }
-        [Required]
-        public string LastName { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         [EmailAddress]

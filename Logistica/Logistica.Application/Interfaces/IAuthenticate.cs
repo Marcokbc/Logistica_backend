@@ -8,8 +8,8 @@ namespace Logistica.Application.Interfaces
 {
     public interface IAuthenticate
     {
-        Task<bool> Authenticate(string email, string password);
-        Task<bool> RegisterUser(string firstName, string lastName, 
+        Task<bool> Authenticate(string usernamE, string password);
+        Task<bool> RegisterUser(string username, 
             string email, string password);
         Task Logout();
     }
