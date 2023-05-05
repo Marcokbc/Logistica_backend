@@ -43,7 +43,7 @@ namespace Logistica.API.Controllers
             return Ok(pedido);
         }
 
-
+        [AllowAnonymous]
         [HttpGet("codigo/{codigo}", Name = "GetPedidoByCodigo")]
         public async Task<ActionResult<Pedido>> GetPedidoByCodigo(string codigo)
         {
