@@ -14,7 +14,7 @@ namespace Logistica.Application.Interfaces
         Task<PedidoDTO> GetById(int? id);
         Task<PedidoDTO> GetByCodigo(string? codigo);
         Task<bool> Add(PedidoPostDTO pedidoDto);
-        Task<bool> Update(PedidoDTO pedidoDto);
+        Task<bool> Update(PedidoPostDTO pedidoDto);
         Task<bool> Remove(int? id);
     }
 }

@@ -72,7 +72,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] PedidoDTO pedido)
+        public async Task<ActionResult> Put(int id, [FromBody] PedidoPostDTO pedido)
         {
             if (!ModelState.IsValid)
             {
