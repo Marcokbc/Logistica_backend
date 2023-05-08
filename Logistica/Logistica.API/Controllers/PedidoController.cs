@@ -58,7 +58,7 @@ namespace Logistica.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] PedidoDTO pedido)
+        public async Task<ActionResult> Post([FromBody] PedidoPostDTO pedido)
         {
             if (!ModelState.IsValid)
             {

@@ -49,7 +49,7 @@ namespace Logistica.Application.Services
             return _mapper.Map<PedidoDTO>(pedidoEntity);
         }
 
-        public async Task<bool> Add(PedidoDTO pedidoDto)
+        public async Task<bool> Add(PedidoPostDTO pedidoDto)
         {
             Validator.ValidateObject(pedidoDto, new ValidationContext(pedidoDto), true);
 
