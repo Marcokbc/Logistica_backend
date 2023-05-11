@@ -10,6 +10,10 @@ Outrossim, A API consta com os métodos HTTP: GET, POST, PUT e DELETE, e variaç
 
 Por fim, a Web API consta com autenticação via JWT e testes unitários utilizando xUnit, além de obviamente utilizar o Entity Framework Core para se conectar ao banco de dados, que por sua vez é o SQL Server.
 
+## FrontEnd
+Confira também o frontend do projeto.
+https://github.com/Marcokbc/Logistica_frontend
+
 ## Modelo conceitual
 ![Marco](https://github.com/Marcokbc/Logistica_backend/assets/88397083/b1cfb763-e98f-4939-a33c-dff0ee443196)
 
