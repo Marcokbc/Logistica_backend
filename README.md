@@ -33,7 +33,7 @@ Pré-requisitos: .NET 6 e SQL Server
 
 ```bash
 # clonar repositório
-git clone https://github.com/Marcokbc/dsmeta
+git clone https://github.com/Marcokbc/Logistica_backend
 ```
 Configure a String de conexão do banco de dados no arquivo appsettings.json. 
 ```
